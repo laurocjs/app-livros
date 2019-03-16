@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/root_layout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/drawable_gradient_animation_list">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:hint="Email" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.226"
+            android:layout_marginTop="128dp" android:layout_marginBottom="8dp" android:layout_marginEnd="32dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginStart="32dp" android:textColor="#FFF"
+            android:textColorHint="#FFF" android:textColorHighlight="#FFF" android:shadowColor="#FFF"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:hint="Password" app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="@+id/editText" android:textColor="#FFF" android:shadowColor="#FFF"
+            android:textColorHighlight="#FFF" android:textColorHint="#FFF"/>
+    <Button
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" app:layout_constraintEnd_toEndOf="@+id/editText2"
+            app:layout_constraintStart_toStartOf="@+id/editText2"
+            android:layout_marginTop="16dp" app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="Not a member? Sign up now."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            android:layout_marginTop="32dp" app:layout_constraintHorizontal_bias="1.0" android:textAlignment="center"/>
+</android.support.constraint.ConstraintLayout>
